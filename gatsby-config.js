@@ -1,18 +1,28 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "heeyoung-dev",
+    siteUrl: 'https://www.yourdomain.tld',
+    title: 'heeyoung-dev',
   },
   plugins: [
-    "gatsby-plugin-emotion",
-    "gatsby-plugin-mdx",
+    'gatsby-plugin-image',
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-mdx',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'assets',
+        path: `${__dirname}/src/assets`,
       },
-      __key: "pages",
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-typescript',
   ],
 };
