@@ -4,7 +4,10 @@ module.exports = {
     title: 'heeyoung-dev',
   },
   plugins: [
+    'gatsby-plugin-fontawesome-css',
     'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-emotion',
     'gatsby-plugin-mdx',
     {
@@ -21,8 +24,7 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+
     'gatsby-plugin-typescript',
   ],
 };
