@@ -21,20 +21,35 @@ export const HeroHeader = styled.header`
   }
 
   @media screen and (min-width: 800px) {
-    height: 18rem;
+    height: 16rem;
+  }
+
+  .hero-image {
+    display: none !important;
+    @media screen and (min-width: 800px) {
+      display: block !important;
+      position: absolute;
+      bottom: 0;
+      left: 60%;
+      transform: translate(-20%, 20%);
+      z-index: 4;
+    }
+  }
+
+  .hero-home {
+    width: 17rem;
+    height: 15rem;
+  }
+
+  .hero-posts {
+    width: 13rem;
+    height: 14rem;
+  }
+
+  .hero-categories {
+    width: 13rem;
+    height: 11rem;
   }
 `;
 
-export const HeroImg = css`
-  display: none !important;
-  @media screen and (min-width: 800px) {
-    width: 20rem;
-    height: 20rem;
-    display: block !important;
-    position: absolute;
-    bottom: 0;
-    left: 60%;
-    transform: translate(-20%, 20%);
-    z-index: 4;
-  }
-`;
+export const HeroImg = css``;
