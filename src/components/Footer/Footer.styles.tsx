@@ -3,14 +3,18 @@ import styled from '@emotion/styled';
 export const FooterWrapper = styled.footer`
   height: 7rem;
   text-align: center;
-  background: var(--clr-black);
   display: grid;
   place-items: center;
 
+  > div {
+    width: 85vw;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+  }
+
   p {
     margin-bottom: 0;
-    color: var(--clr-white);
-    text-transform: uppercase;
     letter-spacing: var(--spacing);
   }
 `;

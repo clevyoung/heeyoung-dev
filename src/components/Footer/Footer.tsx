@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <div>
+        <p>All Rights Reserved &copy;Clevyoung {new Date().getFullYear()} </p>
         <FooterSocialLinks className='footer-icons' />
-        <p>&copy;{new Date().getFullYear()} Hee Young. All Rights Reserved</p>
       </div>
     </FooterWrapper>
   );
