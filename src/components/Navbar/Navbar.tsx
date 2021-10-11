@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { StyledNavLinks } from '../NavLinks/NavLinks.styles';
-import { NavSocialLinks } from '../SocialLinks/SocialLinks.styles';
 
 import {
   NavbarWrapper,
@@ -22,13 +21,15 @@ const Navbar: React.VFC<Props> = ({ toggle }) => {
     <NavbarWrapper>
       <NavCenter>
         <NavHeader>
-          <NavLogo to='/'>Hee Young</NavLogo>
+          <NavLogo to='/'>
+            <span>Clevyoung</span>
+          </NavLogo>
           <ToggleBtn onClick={toggle}>
             <FontAwesomeIcon icon={faBars} size='1x' />
           </ToggleBtn>
         </NavHeader>
         <StyledNavLinks className='nav-links' />
-        <NavSocialLinks className='nav-icons' />
+        {/* 여기는 다국어 자리 */}
       </NavCenter>
     </NavbarWrapper>
   );
