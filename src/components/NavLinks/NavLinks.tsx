@@ -14,10 +14,10 @@ const ActiveLinks: React.FC<Props> = ({ children, className }) => {
       </li>
       <li>
         <PageLink to='/posts'>Posts</PageLink>
-        {children}
       </li>
       <li>
-        <PageLink to='/categories'>Topics</PageLink>
+        <PageLink to='/topics'>Topics</PageLink>
+        {children}
       </li>
     </ul>
   );
