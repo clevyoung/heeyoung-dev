@@ -4,6 +4,7 @@ module.exports = {
     title: 'heeyoung-dev',
   },
   plugins: [
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-fontawesome-css',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
