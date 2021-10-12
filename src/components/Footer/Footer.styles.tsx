@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const FooterWrapper = styled.footer`
   height: 7rem;
-  text-align: center;
   display: grid;
   place-items: center;
 
