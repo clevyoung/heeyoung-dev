@@ -7,7 +7,7 @@ export const HeroHeader = styled.header`
   height: 12rem;
   position: relative;
   z-index: -1;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 
   &::after {
     content: '';
@@ -22,6 +22,7 @@ export const HeroHeader = styled.header`
 
   @media screen and (min-width: 800px) {
     height: 16rem;
+    margin-bottom: 6rem;
   }
 
   .hero-image {
@@ -42,13 +43,13 @@ export const HeroHeader = styled.header`
   }
 
   .hero-posts {
-    width: 13rem;
-    height: 14rem;
+    width: 12rem;
+    height: 13rem;
   }
 
   .hero-categories {
-    width: 13rem;
-    height: 11rem;
+    width: 9rem;
+    height: 12rem;
   }
 `;
 
