@@ -15,7 +15,6 @@ const Posts: React.FC<Props> = ({ posts, title, isAboutVisible }) => {
     <PostsWrapper>
       <PostsTitle>{title}</PostsTitle>
       <PostsCenter>
-        {/* posts column*/}
         <article>
           {posts.map((post) => {
             console.log(post.id);
@@ -23,7 +22,6 @@ const Posts: React.FC<Props> = ({ posts, title, isAboutVisible }) => {
             return <PostItem key={post.id} {...post} />;
           })}
         </article>
-        {/* banner column */}
         <article>
           <Banner isAboutVisible={isAboutVisible} />
         </article>

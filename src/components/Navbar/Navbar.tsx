@@ -29,7 +29,6 @@ const Navbar: React.VFC<Props> = ({ toggle }) => {
           </ToggleBtn>
         </NavHeader>
         <StyledNavLinks className='nav-links' />
-        {/* 여기는 다국어 자리 */}
       </NavCenter>
     </NavbarWrapper>
   );
