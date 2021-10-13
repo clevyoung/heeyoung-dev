@@ -8,7 +8,6 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 
 const PostTemplate = ({ data }) => {
-  console.log(data);
   const {
     mdx: {
       frontmatter: { title, category, image, date, embeddedImages },
