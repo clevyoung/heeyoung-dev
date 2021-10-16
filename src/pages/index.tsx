@@ -37,7 +37,6 @@ export const query = graphql`
         id
         excerpt
         frontmatter {
-          author
           category
           date(formatString: "MMMM DD, YYYY")
           slug
