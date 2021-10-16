@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: clevyoung/heeyoung-dev
   branch: master
 
 media_folder: static/assets
