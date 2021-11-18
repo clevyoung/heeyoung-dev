@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import Layout from '../components/Layout';
-import Hero from '../components/Hero';
-import Posts from '../components/Posts';
+import Layout from '@components/Layout';
+import Hero from '@components/Hero';
+import Posts from '@components/Posts';
 
 const IndexPage: React.VFC = ({ data }) => {
   const {
